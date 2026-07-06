@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #4E220F;
+    --secondary-color: #B0BA99;
+    --text-color: #9D6638;
+    --background-color: #F7F1DE;
+}
+
+section.plan-container {
+    margin: 5rem auto;
+    text-align: center;
+    padding: 5rem auto;
+}
+
+/* pricing-container */
+section.pricing-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 50px;
+
+
+
+}
+
+
+
+.pricing-card {
+    background-color: var(--secondary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 5%;
+    box-shadow: -10px 15px 15px -10px var(--primary-color);
+    border: 1px solid transparent;
+    transition: all linear 0.2s;
+}
+
+.pricing-card:hover {
+    border: 1px dashed var(--background-color);
+    transform: scale(1.1);
+    z-index: 1;
+
+}
+
+.pricing-card:nth-child(2) {
+    transform: scale(1.2);
+    box-shadow: 0 15px 15px -10px var(--primary-color);
+    background-color: var(--text-color);
+}
+
+.pricing-card:nth-child(2) h3 {
+    color: var(--secondary-color);
+}
+
+.pricing-card h3 {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.pricing-card h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.pricing-card button {
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pricing-card button:hover {
+    color: var(--background-color);
+}
+
+.pricing-card p {
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.pricing-card ul li {
+    line-height: 1.5rem;
+    transition: all ease-in 0.3s;
+    border-bottom: 1px dashed transparent;
+
+}
+
+.pricing-card:hover ul li {
+    border-bottom: 1px dashed var(--background-color);
+}
